@@ -33,6 +33,45 @@
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
     <![endif]-->
+    <script>
+        var div = document.createElement('div');
+        div.className = 'fb-customerchat';
+        div.setAttribute('page_id', '108433304363181');
+        div.setAttribute('ref', 'b64:bGl2ZS1jaGF0');
+        document.body.appendChild(div);
+        window.fbMessengerPlugins = window.fbMessengerPlugins || {
+          init: function () {
+            FB.init({
+              appId            : '1678638095724206',
+              autoLogAppEvents : true,
+              xfbml            : true,
+              version          : 'v7.0'
+            });
+          }, callable: []
+        };
+        window.fbAsyncInit = window.fbAsyncInit || function () {
+          window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
+          window.fbMessengerPlugins.init();
+        };
+        setTimeout(function () {
+          (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        }, 0);
+      </script>
+      <div class="fb-customerchat"
+      page_id="108433304363181"
+      ref="live-chat"
+     
+      logged_in_greeting="Hey there! Welcome to Base Apparel"
+      logged_out_greeting="Hey there! Welcome to Base Apparel">
+    </div>
+
 </head> 
 <body class="header_sticky header-style-2 topbar-style-2 topbar-width-94 topbar-divider has-menu-extra">
 	<!-- Preloader -->
@@ -102,7 +141,7 @@
                                     <a href="shop-4col.html">SHOP</a>
                                 </li>
                                 <li>
-                                    <a href="#">GROUP 3</a>
+                                    <a href="#">GROUP 4</a>
                                     <ul class="submenu">                                        
                                         <li><a href="#">Ekansh Sharma</a></li>
                                         <li><a href="#">Bhavya</a></li>
@@ -605,10 +644,7 @@
             </div>
         </div>
 
-        <!-- Go Top --> 
-        <a class="go-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>  
+      
 
     </div>
 
